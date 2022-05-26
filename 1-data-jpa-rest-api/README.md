@@ -2,7 +2,7 @@
 
 ### How to use this application
 
-- First create a new Mysql database & check **pom.xml** see configuration.
+- First create a new Mysql database, check **pom.xml** & **application.properties** see configuration.
 - Clean and Build with skip Tests
 
     `mvn clean install -DskipTests`
