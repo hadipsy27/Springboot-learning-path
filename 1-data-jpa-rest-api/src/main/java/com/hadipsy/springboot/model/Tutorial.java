@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "tutorials")
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
 public class Tutorial {
     @Id
@@ -24,6 +23,12 @@ public class Tutorial {
 
     @Column(name = "published")
     private boolean published;
+
+    public Tutorial(String title, String description, boolean published) {
+        this.title = title;
+        this.description = description;
+        this.published = published;
+    }
 
     @Override
     public String toString() {
